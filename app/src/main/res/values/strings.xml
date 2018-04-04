@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Battleship</string>
+    <string name="action_settings">Settings</string>
+    <string name="play">PlAY</string>
+    <string name="chp_saisie">youyou</string>
+    <string name="title_activity_affichagemessage">Affichagemessage</string>
+    <string name="toptext">BATTLESHIP</string>
+    <string name="anim_terre_descript">Animation</string>
+    <string name="title_activity_gamescreen">GAMESCREEN</string>
+    <string name="youyou">BITE</string>
+    <string name="gregoire">DEFINITION</string>
+</resources>
