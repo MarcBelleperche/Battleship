@@ -15,7 +15,7 @@ public class GAMESCREEN extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gamescreen);
-        //GridView gridView = (GridView) findViewById(R.id.gridview);
+        GridView gridView = (GridView) findViewById(R.id.mainGrid);
 
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
