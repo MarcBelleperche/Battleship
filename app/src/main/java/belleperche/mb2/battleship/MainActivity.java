@@ -21,7 +21,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-    GridLayout mainGrid;
 
 
     public final static String MESSAGE_SUPP = "android.belleperche.mb2.battleship.MESSAGE";
@@ -31,13 +30,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        mainGrid = (GridLayout) findViewById(R.id.mainGrid);
-
-        // Mettre un evenement
-
-        setToggleEvent(mainGrid);
-
 
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -69,36 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-
-    private void setToggleEvent(GridLayout mainGrid) {
-
-        // referencement de tout les enfants du mainGrid
-        for (int i  =0; i <mainGrid.getChildCount();i++)
-        {
-            final CardView cardView = (CardView)mainGrid.getChildAt(i);
-            cardView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    if (cardView.getCardBackgroundColor().getDefaultColor() == -1)
-                    {
-                    cardView.setCardBackgroundColor(Color.parseColor("#333333"));
-                    Toast.makeText(MainActivity.this, "Placement(s) restants :", Toast.LENGTH_SHORT).show();
-                    }
-                    else
-                    {
-                    cardView.setCardBackgroundColor(Color.parseColor("#333333"));
-                    Toast.makeText(MainActivity.this, "Placement(s) restants : 5", Toast.LENGTH_SHORT).show();
-                    }
-
-                    }
-
-                });
-            }
-
-
-        }
-
 
 
 
